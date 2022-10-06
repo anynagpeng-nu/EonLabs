@@ -1,0 +1,19 @@
+### Data Representation TTA
+
+#### Task
+
+- Clean raw data to get hourly Google Trends data on bitcoin
+
+#### Time
+
+- Took me about ~ 1 h 30 mins in total
+
+#### Idea
+- As descirbed in the problem, value_hour is rescaled with respect to week and value_week is rescaled with respect to month, so we can use value_week and value_month as scalling factors to get real value_hour
+- merge weekly data and monthly data onto hourly data and foward fill NA values to propagate the scalling factors. Then multiply all three values together.
+
+#### Instructions
+- make sure pandas and matplotlib is installed
+    - pip install pandas
+    - pip install matplotlib
+- run 'python main.py'
